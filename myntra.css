@@ -1,0 +1,13 @@
+.bagbutton{
+  background-color: lightgreen;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+ }
+ .wishbutton{
+  background-color: red;
+  border: 2px solid black;
+  padding: 8px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  }

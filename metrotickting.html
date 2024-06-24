@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>metro ticketing</title>
+</head>
+<body>
+
+  <!-- Q1. give discount based on age, gender for metro ticket 
+  -females get 50% off
+  -kids under 5 years of age are free
+  -kids up to 8 years have half ticket 
+  -people over 65 years of age only pay 30% of the ticket
+  -in case of multiple discount max discount will apply. -->
+  <!-- <script>
+    let age = 75;
+    let gender = 'female'; // male and female
+    let finaldiscount;
+     
+    if(age<=5){
+      finaldiscount= 100;
+    } else if(gender == 'female' || age <= 8){
+      finaldiscount =50;
+    }else if(age >=65){
+      finaldiscount= 30;
+    }else{
+      finaldiscount= 0;
+    }
+
+    console.log(`your final age discount is ${finaldiscount}`)
+
+  </script> -->
+
+    <!-- Q2. gst based on the materials and business
+      hotel business 28% gst
+      clotches business 18% gst
+      salary up to 10 lakh 20% gst
+      builder business 36% gst
+      shoes business 18% gst -->
+
+
+
+   <script>
+     let gstrate = 155;
+     let message;    
+     if(gstrate <= 28){
+      message = 'your business is hotel'
+     }else if(gstrate <=18){
+      message = 'your business is clotches and shoes';
+     }else if(gstrate >= 70){
+      message = 'you are working in corporate company';
+     } else if(gstrate >= 36){
+      message = 'you are from builder';
+     } else{
+      message = 'you are bombal fakir';
+     }
+     console.log(`consider ${message}`);
+
+   </script>
+</body>
+</html>

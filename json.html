@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>json</title>
+</head>
+<body>
+  
+
+  <script>
+
+    // javascript object notation not the same as js object but similar JSON.stringify() converted into object to string and JSON.parse() converted into string to object
+
+   // string are easy to transport over network
+   // js object is deta structure json is only type
+/**/
+  
+   /* let product = {
+      name: 't-shirt',
+      price: 789,
+      rating: {
+        stars:4.5,
+        noofreviews:453,
+      }
+    }
+    console.log(typeof product);
+    console.log(product);
+    let str = JSON.stringify(product);
+    console.log(typeof str);
+    console.log(str);
+
+    let newproduct = JSON.parse(str);
+    console.log(typeof newproduct);
+    console.log(newproduct); 
+    */
+
+  /*  let product = {
+      name: 't-shirt',
+      price: 789,
+      rating: {
+        stars:4.5,
+        noofreviews:453,
+      }
+    }; 
+    let details={
+      name:'pritam',
+      email:'dhembarepritam@4gmzil.com',
+      number:'8459940093',
+      school:'yspm'
+    } */
+
+  //  localStorage.setItem('name','kg coading');
+   // localStorage.setItem('price','87987');
+
+  // console.log(localStorage.getItem('name'));
+
+      //setItem : store deta as key-value pairs
+      //only string can be store
+      // localStorage.setItem('product', JSON.stringify(product));
+
+ //getItem : retrives deta based on key
+ // console.log(localStorage.getItem('product'));
+  
+ // let product2 = JSON.parse(localStorage.getItem('product'));
+//   console.log(product2);
+
+//clear one item use removeItem()
+//localStorage.removeItem('price'); 
+
+//clear all use to clear()
+// localStorage.clear();
+
+/*
+let pd = {
+  name: "tshirt",
+  price: 789,
+  rating: {
+    stars:4.5,
+    noofreviews: 453,
+  },
+};
+ console.log(typeof pd);
+ console.log(pd);
+ let str = JSON.stringify(pd);
+ console.log(typeof str);
+ console.log(str); 
+
+let newpd = JSON.parse(str);
+console.log(typeof newpd);
+console.log(newpd);
+
+localStorage.setItem('name','kg coading');
+localStorage.setItem('price','87900');
+localStorage.setItem('pd','priram dhembare');
+localStorage.setItem('number','8459940093');
+localStorage.setItem('address','pune')
+
+console.log(localStorage.getItem('name'));
+console.log(localStorage.getItem('number'));
+localStorage.setItem('pd', pd);
+localStorage.setItem('pd',JSON.stringify(pd));
+console.log(localStorage.getItem('pd'));
+let pd2 = JSON.parse(localStorage.getItem('pd'));
+//localStorage.removeItem('pd');
+localStorage.clear(); */
+
+  </script>
+</body>
+</html>

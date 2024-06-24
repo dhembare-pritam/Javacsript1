@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>practice set</title>
+</head>
+<body>
+  
+<script>
+ // Q1. create an object represent from myntra
+
+ /*let product ={
+  name: 'jeans',
+  size: 'm',
+  fit: 'slim fit',
+ }; */
+
+// create an object with two references and log changes to one object by changing the other one.
+
+/*let product1 ={
+  name: 'jeans',
+  size: 'm',
+  fit: 'slim fit',
+  'delivery-time':'same day delivery',
+ }; 
+
+ let copyproduct = product1;
+ console.log(product1);
+ copyproduct.size = 'l';
+ console.log(product1);
+ copyproduct.fit='bottom fit';
+ console.log(product1);
+ */
+
+ //use bracket notation to display delivery-time
+// console.log(product1['delivery-time']);
+
+
+//given an obj use de-structuring to create two variables message and status.
+/* let obj={message: 'good job',
+ status:'complete',
+}
+console.log(obj);
+
+let {message,status} = obj;
+console.log(message);
+console.log(status); */
+
+// add function is identical product to compare two product objects.
+
+let prd1 ={
+  name: 'jeans',
+  size: 'm',
+  fit: 'slim fit',
+  'delivery-time':'same day delivery',
+ };
+
+ let prd2 ={
+  name: 'jeans',
+  size: 'l',
+  fit: 'slim fit',
+  'delivery-time':'same day delivery',
+ };
+
+ let prd3 ={
+  name: 'jeans',
+  size: 'l',
+  fit: 'slim fit',
+  'delivery-time':'same day delivery',
+ };
+
+function identical(prd1,prd2){
+   if(typeof prd1 !=='object' || typeof prd2 !=='object'){
+      console.warn('parameter passed was not an object');
+      return false;
+    }
+  if(prd1==prd2){
+    return true;
+  }
+ if(prd1.name ===prd2.name && prd1.size ===prd2.size && prd1.fit ===prd2.fit ){
+  return true;
+
+ }else{
+  return false;
+ }
+  
+}
+
+console.log(identical(prd1,prd1));
+console.log(identical(prd1,prd2));
+console.log(identical(prd3,prd2));
+console.log(identical(prd2,prd3));
+
+</script>
+</body>
+</html>

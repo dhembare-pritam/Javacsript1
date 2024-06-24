@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>practice excercise</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <p id="name">hello guys</p>
+  <button id="btn">submit</button>
+  <script>
+
+    let myname=['pritam', 'tejas','rohit','ganesh','ashutosh']
+    document.getElementById('btn').addEventListener('click', function(){
+      document.querySelector('#name').innerHTML = myname[1];   
+    })
+
+   /*  console.log(myname);
+     document.write(myname); 
+
+     const gst = 18;
+
+   let cartvalue = Math.round(((15599 - (10/100*15599))- 272 + (2499 - (41/100*2499))-29 + 25 +20) * (100 + gst)/100);
+
+   console.log(cartvalue);
+
+   console.log(eval('45 + 20')); */
+  </script>
+
+  <!-- <script>
+    let myname = 'pritam ankush dhembare';
+    document.querySelector('#name').innerHTML = myname;
+    console.log(myname);
+
+    const gst = 18;
+    let cartvalue = Math.round(((15999 - (10/100*15999))- 277 + (2499 - (41/100 * 2499)) - 29 + 25 + 20) * (100 + gst) /100);
+
+    console.log(cartvalue);
+  </script> -->
+</body>
+</html>
